@@ -1,0 +1,55 @@
+.header {
+  background-color: $color-primary;
+  height: 100vh;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text-box {
+    text-align: center;
+
+    .heading-main {
+      font-size: 12rem;
+      text-transform: uppercase;
+      letter-spacing: .7rem;
+      font-weight: 300;
+      
+      span {
+        color: $color-secondary;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        height: .15rem;
+        width: 90%;
+        background-color: rgba($color-white, .1);
+      }
+    }
+
+    .heading-sub {
+      font-size: 4rem;
+      font-weight: 200;
+      letter-spacing: .2rem;
+      padding: 5rem 0;
+
+      span {
+        display: block;
+      }
+
+      .heading-description {
+        font-size: 2rem;
+        padding-top: 3rem;
+        color: rgba($color-primary-ligth, .8);
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    z-index: 0;
+    opacity: .8;
+  }
+}

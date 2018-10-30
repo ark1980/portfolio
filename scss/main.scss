@@ -1,10 +1,12 @@
-@import "./base/animations";
-@import "./base/base";
-@import "./base/typography";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@import "./abstracts/mixins";
-@import "./abstracts/variables";
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
 
-@import "./pages/home";
+@import "components/navigation";
 
-@import "./layout/header";
+@import "pages/home";
+
+@import "layout/header";

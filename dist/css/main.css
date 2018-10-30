@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Roboto:100,300,400,500,700");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #1C1E22; }
+
+.navigation-checkbox {
+  display: none;
+  width: 1rem;
+  height: .2rem;
+  color: #ff004e; }
+
+.navigation-button {
+  position: fixed;
+  top: 7rem;
+  right: 6.5rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #2A2D34;
+  text-align: center;
+  z-index: 3000;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4); }
+
+.navigation-background {
+  position: fixed;
+  top: 7.1rem;
+  right: 7rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#ff004e, #E82363);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.navigation-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation-list {
+  text-align: center;
+  list-style: none; }
+
+.navigation-item {
+  margin: 1rem; }
+
+.navigation-link:link, .navigation-link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFFFFF 50%);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-size: 230%;
+  transition: all .3s; }
+  .navigation-link:link span, .navigation-link:visited span {
+    display: inline-block;
+    margin-right: 1.5rem; }
+
+.navigation-link:hover, .navigation-link:active {
+  background-position: 100%;
+  color: #E82363;
+  transform: translateX(1rem); }
+
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(80); }
+
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  visibility: visible;
+  width: 100%; }
+
+.navigation-icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation-icon, .navigation-icon::before, .navigation-icon::after {
+    width: 3.5rem;
+    height: 2.1px;
+    background-color: #FFFFFF;
+    display: inline-block; }
+  .navigation-icon::before, .navigation-icon::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: all .1s; }
+  .navigation-icon::before {
+    top: -1rem; }
+  .navigation-icon::after {
+    top: 1rem; }
+
+.navigation-button:hover .navigation-icon::before {
+  top: -1.2rem;
+  transition: all .2s; }
+
+.navigation-button:hover .navigation-icon::after {
+  top: 1.2rem; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+.header {
+  background-color: #1C1E22;
+  height: 100vh;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header__text-box {
+    text-align: center; }
+    .header__text-box .heading-main {
+      font-size: 12rem;
+      text-transform: uppercase;
+      letter-spacing: .7rem;
+      font-weight: 300; }
+      .header__text-box .heading-main span {
+        color: #E82363; }
+      .header__text-box .heading-main::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        height: .15rem;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.1); }
+    .header__text-box .heading-sub {
+      font-size: 4rem;
+      font-weight: 200;
+      letter-spacing: .2rem;
+      padding: 5rem 0; }
+      .header__text-box .heading-sub span {
+        display: block; }
+      .header__text-box .heading-sub .heading-description {
+        font-size: 2rem;
+        padding-top: 3rem;
+        color: rgba(167, 167, 167, 0.8); }
+  .header .logo {
+    position: absolute;
+    z-index: 0;
+    opacity: .8; }

@@ -1,8 +1,9 @@
-//Fonts
-$Roboto: 'Roboto', sans-serif;
-$Montserrat: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Roboto:100,300,400,500,700');
 
-// Colors
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
 $color-primary: #1C1E22;
+$color-primary-ligth: #A7A7A7;
 $color-secondary: #E82363;
 $color-white: #FFFFFF;
