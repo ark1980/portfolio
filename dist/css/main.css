@@ -1,3 +1,18 @@
+/*
+  Phone Portrate   => 0 - 400px
+  Phone Landscape  => 400px - 600px
+  Tablet Portrait  => 600px - 900px
+  Tablet Landscape => 900px - 1200px
+  Laptop           => 1200px - 1800px  
+  Desktop          => 1800px +   
+  
+  Brealepoint Arguments:
+  * phone-port
+  * tab-port
+  * tab-land
+  * laptop
+  * desktop
+*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Roboto:100,300,400,500,700");
 *,
 *::after,
@@ -38,6 +53,12 @@ body {
   -webkit-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
   box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    .navigation-button {
+      top: 3rem;
+      right: 3rem;
+      width: 6rem;
+      height: 6rem; } }
 
 .navigation-background {
   position: fixed;
@@ -49,6 +70,12 @@ body {
   background-image: radial-gradient(#ff004e, #E82363);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  @media (max-width: 900px) {
+    .navigation-background {
+      top: 3.2rem;
+      right: 3.2rem;
+      width: 5rem;
+      height: 5rem; } }
 
 .navigation-nav {
   width: 100%;
@@ -104,6 +131,9 @@ body {
 .navigation-icon {
   position: relative;
   margin-top: 3.5rem; }
+  @media (max-width: 900px) {
+    .navigation-icon {
+      margin-top: 3rem; } }
   .navigation-icon, .navigation-icon::before, .navigation-icon::after {
     width: 3.5rem;
     height: 2.1px;
@@ -137,6 +167,87 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.8rem 3.5rem;
+  color: #FFFFFF;
+  background-color: #E82363;
+  text-decoration: none;
+  border: 1px solid #E82363;
+  transition: all .3s; }
+
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #E82363; }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  position: relative; }
+  .page-header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 1rem; }
+  .page-header-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .page-header-text::after {
+      content: "";
+      height: .22rem;
+      background-color: #1C1E22;
+      width: 39%;
+      position: absolute;
+      display: inline-block; }
+    .page-header-text p {
+      color: #E82363;
+      font-size: 2.4rem;
+      font-weight: 600;
+      position: absolute;
+      right: 0; }
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5rem; }
+  .about__pic {
+    width: 100%; }
+  .about__text {
+    position: relative;
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400; }
+    .about__text-details p {
+      margin-bottom: 1.5rem; }
+    .about__text-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 4rem; }
+      .about__text-links .social-icons {
+        margin-top: .6rem;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        align-items: center; }
+    .about__text .page-header-text p {
+      margin-right: 2.1rem; }
+
 .header {
   background-color: #1C1E22;
   height: 100vh;
@@ -144,9 +255,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .header__text-box {
-    text-align: center; }
+    text-align: center;
+    padding: 1rem; }
     .header__text-box .heading-main {
       font-size: 12rem;
       text-transform: uppercase;
@@ -158,21 +271,62 @@ body {
         content: "";
         display: block;
         margin: 0 auto;
-        height: .15rem;
+        height: .1rem;
         width: 90%;
-        background-color: rgba(255, 255, 255, 0.1); }
+        background-color: rgba(255, 255, 255, 0.2); }
+        @media (max-width: 900px) {
+          .header__text-box .heading-main::after {
+            width: 70%;
+            margin-top: 1rem; } }
+      @media (max-width: 1024px) {
+        .header__text-box .heading-main {
+          font-size: 10.2rem; } }
+      @media (max-width: 900px) {
+        .header__text-box .heading-main {
+          font-size: 5rem;
+          line-height: 1.4; } }
+      @media (max-width: 600px) {
+        .header__text-box .heading-main {
+          font-size: 4rem;
+          line-height: 1.4; } }
     .header__text-box .heading-sub {
       font-size: 4rem;
       font-weight: 200;
       letter-spacing: .2rem;
       padding: 5rem 0; }
+      @media (max-width: 900px) {
+        .header__text-box .heading-sub {
+          font-size: 3rem;
+          padding: 0 1.8rem;
+          margin-top: 6rem; } }
+      @media (max-height: 27em) {
+        .header__text-box .heading-sub {
+          margin-top: 2rem;
+          font-size: 2.2rem; } }
       .header__text-box .heading-sub span {
         display: block; }
       .header__text-box .heading-sub .heading-description {
         font-size: 2rem;
         padding-top: 3rem;
         color: rgba(167, 167, 167, 0.8); }
+        @media (max-width: 900px) {
+          .header__text-box .heading-sub .heading-description {
+            padding-top: 2rem; } }
+        @media (max-width: 600px) {
+          .header__text-box .heading-sub .heading-description {
+            font-size: 1.8rem; } }
   .header .logo {
     position: absolute;
     z-index: 0;
-    opacity: .8; }
+    opacity: .8;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+    @media (max-width: 600px) {
+      .header .logo {
+        transform: translateX(-60%) translateY(-50%); } }
+    .header .logo img {
+      width: 100%; }
+      @media (max-width: 600px) {
+        .header .logo img {
+          width: 120%; } }

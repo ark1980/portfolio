@@ -1,0 +1,35 @@
+// MEDIA QUERY MANAGER
+/*
+  Phone Portrate   => 0 - 400px
+  Phone Landscape  => 400px - 600px
+  Tablet Portrait  => 600px - 900px
+  Tablet Landscape => 900px - 1200px
+  Laptop           => 1200px - 1800px  
+  Desktop          => 1800px +   
+  
+  Brealepoint Arguments:
+  * phone-port
+  * tab-port
+  * tab-land
+  * laptop
+  * desktop
+*/
+
+@mixin response($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) { @content };
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 1024px) { @content };
+  }
+  
+  @if $breakpoint == laptop {
+    @media (max-width: 1024px) { @content };
+  }
+}
+

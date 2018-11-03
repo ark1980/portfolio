@@ -6,9 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__text-box {
     text-align: center;
+    padding: 1rem;
 
     .heading-main {
       font-size: 12rem;
@@ -24,9 +26,28 @@
         content: "";
         display: block;
         margin: 0 auto;
-        height: .15rem;
+        height: .1rem;
         width: 90%;
-        background-color: rgba($color-white, .1);
+        background-color: rgba($color-white, .2);
+
+        @include response(tab-port) {
+          width: 70%;
+          margin-top: 1rem;
+        }
+      }
+
+      @include response(tab-land) {
+        font-size: 10.2rem;
+      }
+
+      @include response(tab-port) {
+        font-size: 5rem;
+        line-height: 1.4;
+      }
+
+      @include response(phone) {
+        font-size: 4rem;
+        line-height: 1.4;
       }
     }
 
@@ -36,6 +57,17 @@
       letter-spacing: .2rem;
       padding: 5rem 0;
 
+      @include response(tab-port) {
+        font-size: 3rem;
+        padding: 0 1.8rem;
+        margin-top: 6rem;
+      }
+
+      @media (max-height: 27em) {
+        margin-top: 2rem;
+        font-size: 2.2rem;
+      }
+
       span {
         display: block;
       }
@@ -44,12 +76,37 @@
         font-size: 2rem;
         padding-top: 3rem;
         color: rgba($color-primary-ligth, .8);
+
+        @include response(tab-port) {
+          padding-top: 2rem;
+        }
+
+        @include response(phone) {
+          font-size: 1.8rem;
+        }
       }
     }
   }
+
   .logo {
     position: absolute;
     z-index: 0;
     opacity: .8;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include response(phone) {
+      transform: translateX(-60%) translateY(-50%);
+    }
+
+    img {
+      width: 100%;
+
+      @include response(phone) {
+        width:120%;
+      }
+    }
+
   }
 }

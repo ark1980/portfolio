@@ -1,0 +1,23 @@
+// .btn-scroll-down {
+//   position: absolute;
+//   left: 50%;
+//   bottom: 50px;
+
+//   animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite;
+// }
+
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.8rem 3.5rem;
+  color: $color-white;
+  background-color: $color-secondary;
+  text-decoration: none;
+  border: 1px solid $color-secondary;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: $color-white;
+  color: $color-secondary;
+}
