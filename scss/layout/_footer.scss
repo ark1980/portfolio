@@ -28,19 +28,23 @@
 
   &-social-icons {
     
-    img {
-      width: 3rem;
+    a {
+      color: $color-primary;
+      transition: .2s ease-in-out;
+    }
+
+    a:hover {
+      color:$color-primary-ligth;
     }
 
     a:not(last-child) {
-      margin-right: 1.5rem;
+      margin-right: 2.5rem;
     }
   }
 
   @include response(tab-port) {
-
-    img {
-      width: 2.5rem;
+    a:not(last-child) {
+      margin-right: 2rem;
     }
   }
 
@@ -55,8 +59,8 @@
       margin-bottom: 1.5rem;
     }
 
-    img {
-      margin: 0 1rem;
+    a:not(last-child) {
+      margin-right: 3rem;
     }
   }
 }

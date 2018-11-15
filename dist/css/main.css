@@ -790,13 +790,16 @@ body {
     .footer-text span {
       color: #1C1E22;
       font-weight: 600; }
-  .footer-social-icons img {
-    width: 3rem; }
+  .footer-social-icons a {
+    color: #1C1E22;
+    transition: .2s ease-in-out; }
+  .footer-social-icons a:hover {
+    color: #A7A7A7; }
   .footer-social-icons a:not(last-child) {
-    margin-right: 1.5rem; }
+    margin-right: 2.5rem; }
   @media (max-width: 900px) {
-    .footer img {
-      width: 2.5rem; } }
+    .footer a:not(last-child) {
+      margin-right: 2rem; } }
   @media (max-width: 600px) {
     .footer {
       flex-direction: column;
@@ -806,5 +809,5 @@ body {
       .footer h2 {
         font-size: 1.2rem;
         margin-bottom: 1.5rem; }
-      .footer img {
-        margin: 0 1rem; } }
+      .footer a:not(last-child) {
+        margin-right: 3rem; } }
