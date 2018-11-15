@@ -23,13 +23,21 @@
   @if $breakpoint == tab-port {
     @media (max-width: 900px) { @content };
   }
-
+  
   @if $breakpoint == tab-land {
     @media (max-width: 1024px) { @content };
   }
   
   @if $breakpoint == laptop {
-    @media (max-width: 1024px) { @content };
+    @media (max-width: 1204px) { @content };
+  }
+
+  @if $breakpoint == small-desktop {
+    @media (max-width: 1460px) { @content };
+  }
+
+  @if $breakpoint == desktop {
+    @media (max-width: 1600px) { @content };
   }
 }
 

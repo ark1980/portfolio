@@ -4,14 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
   <title>ABOUT | ALI KESHANIAN</title>
 </head>
 <body>
+  <!-- Navigation-->
+  <div class="navigation">
+    <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation-button">
+      <span class="navigation-icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation-background" id="navigation-background">&nbsp;</div>
+    <div class="navigation-nav">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-link" href="./index.html"><span>01</span>Home</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="./about.html"><span>02</span>About me</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="./skills.html"><span>03</span>Skills</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="./portfolio.html"><span>04</span>Portfolio</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="#contact"><span>05</span>Get in touch</a></li> 
+      </ul>
+    </div>
+  </div>
+
   <div class="about">
     <div class="about__pic">
       <img srcset="./images/about-small.png 350w, ./images/about-large.png 500w"
-           sizes="(max-width: 600px) 80vw,(max-width: 900px) 50vw , 500px"
+           sizes="(max-width: 600px) 90vw,(max-width: 900px) 60vw,(max-width: 1400px) 40vw, 500px"
            alt="myPicture"
            src="./images/about-large.png">
     </div>
@@ -41,10 +61,10 @@
       <div class="about__text-links">
         <a class="btn" href="">download resume</a>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/ark1980/" target="_blank"><img src="./images/linkedin-brands.png" alt="linkedIn Icon"></a>
-          <a href="https://github.com/ark1980" target="_blank"><img src="./images/github-square-brands.png" alt="Github Icon"></a>
-          <a href="https://codepen.io/ark1980/" target="_blank"><img src="./images/codepen-brands.png" alt="Codepen Icon"></a>
-          <a href="https://codesandbox.io/u/ark1980" target="_blank"><img src="./images/codesandbox.png" alt="Codesandbox Icon"></a>
+          <a href="https://www.linkedin.com/in/ark1980/" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-3x"></i></a>
+          <a href="https://github.com/ark1980" target="_blank" title="github"><i class="fab fa-github-square fa-3x"></i></a>
+          <a href="https://codepen.io/ark1980/" target="_blank" title="codepen"><i class="fab fa-codepen fa-3x"></i></a>
+          <a href="https://codesandbox.io/u/ark1980" target="_blank" title="codesandbox"><i class="fas fa-code fa-3x"></i></a>
         </div>
       </div>
     </div>  

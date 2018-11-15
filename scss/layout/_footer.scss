@@ -1,0 +1,62 @@
+.footer {
+  background: $color-secondary;
+  height: 8rem;
+  margin-top: -8rem;
+  position: relative;
+  padding: 4rem 0;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  &-text {
+    color: $color-white;
+
+    h2 {
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+
+    span {
+      color: $color-primary;
+      font-weight: 600;
+    }
+  }
+
+  &-social-icons {
+    
+    img {
+      width: 3rem;
+    }
+
+    a:not(last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  @include response(tab-port) {
+
+    img {
+      width: 2.5rem;
+    }
+  }
+
+  @include response(phone) {
+    flex-direction: column;
+    justify-content: center;
+    height: 9rem;
+    padding: 0;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      margin: 0 1rem;
+    }
+  }
+}

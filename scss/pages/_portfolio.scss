@@ -1,0 +1,133 @@
+.portfolio {
+  width:100vw;
+  border-top: 5px solid $color-secondary;
+
+  // height: 100vh;
+  
+  .page-header {
+    position: relative;
+    align-self: flex-start;
+    width: 24.5rem;
+    
+    &-text::after {
+      width: 55%;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    @include response(tab-port) {
+      width: 19.5rem;
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      &-text::after {
+        width: 48%;
+      }
+  
+      p {
+        font-size: 1.8rem;
+      }
+    }
+
+    @include response(phone) {
+      width: 18.5rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      &-text::after {
+        width: 51%;
+      }
+  
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__wrapper {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5rem;
+    margin: 15rem auto 0;
+
+    &-header {
+      border-right: 2px solid $color-secondary;
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-icons {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 2rem auto 0;
+    }
+
+    @include response(small-desktop) {
+      width: 75%;
+    }
+   
+    @include response(laptop) {
+      width: 85%;
+    }
+
+    @include response(tab-land) {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @include response(tab-port) {
+      width: 60%;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+
+      &-header {
+        border-right: none;
+      }
+
+      &-header::after {
+        content: "";
+        margin: auto;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+        margin-top: 1.5rem;
+        height: .13rem;
+        background: $color-primary;
+        background: -moz-linear-gradient(left, $color-white 0%, $color-primary 50%, $color-white 100%);
+        background: -webkit-linear-gradient(left, $color-white 0%,$color-primary 50%,$color-white 100%);
+        background: linear-gradient(to right, $color-white 0%,$color-primary 50%,$color-white 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-white', endColorstr='$color-white',GradientType=1 );
+      }
+  
+      &-header {
+        margin: auto;
+      }
+    }
+
+    @include response(phone) {
+      width: 90%;
+
+      &-icons {
+        img {
+          width: 4rem;
+        }
+      }
+    }
+
+  }
+}
