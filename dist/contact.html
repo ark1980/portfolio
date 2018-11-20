@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
   <title>GET In TOUCH | ALI KESHANIAN</title>
 </head>
 <body>
@@ -36,7 +37,12 @@
       </div>
     </div>
 
-    <h1>get in touch</h1>
+    <h1
+      data-sal-duration="400"
+      data-sal="zoom-in"
+      data-sal-delay="200"
+      data-sal-easing="ease-in"
+    >get in touch</h1>
     <div class="contact-form">
       <form id="contact-form" class="form" accept-charset="UTF-8" method="POST">
         <div class="form-group">
@@ -77,5 +83,11 @@
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="./js/main.js"></script>
+  
+  <!-- sal.js animation -->
+  <script src="../node_modules/sal.js/dist/sal.js"></script>
+  <script>
+    sal();
+  </script>
 </body>
 </html>

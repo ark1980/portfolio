@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
   <title>HOME | ALI KESHANIAN</title>
 </head>
 <body>
@@ -28,7 +29,12 @@
   </div>
 
   <div class="header">
-    <div class="header__text-box">
+    <div class="header__text-box"
+      data-sal-duration="800"
+      data-sal="fade"
+      data-sal-delay="400"
+      data-sal-easing="ease-in"
+    >
       <h1 class="heading-main">ali <span>keshanian</span></h1>
       <h1 class="heading-sub">
         <span class="heading-greet">Hello World, I'm Ali.</span>
@@ -37,10 +43,20 @@
       </h1>
     </div>
     <div class="logo">
-      <figure>
+      <figure
+        data-sal-duration="800"
+        data-sal="zoom-in"
+        data-sal-delay="400"
+        data-sal-easing="ease-in"
+      >
         <img src="./images/logo-big.png" alt="logo">
       </figure>
     </div>
   </div>
+
+  <script src="../node_modules/sal.js/dist/sal.js"></script>
+  <script>
+    sal();
+  </script>
 </body>
 </html>

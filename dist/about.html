@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
   <title>ABOUT | ALI KESHANIAN</title>
 </head>
 <body>
@@ -29,20 +30,35 @@
   </div>
 
   <div class="about">
-    <div class="about__pic">
+    <div class="about__pic"
+      data-sal-duration="800"
+      data-sal="zoom-out"
+      data-sal-delay="400"
+      data-sal-easing="ease-in"
+    >
       <img srcset="./images/about-small.png 350w, ./images/about-large.png 500w"
            sizes="(max-width: 600px) 90vw,(max-width: 900px) 60vw,(max-width: 1400px) 40vw, 500px"
            alt="myPicture"
            src="./images/about-large.png">
     </div>
       <div class="about__text">
-        <div class="page-header">
+        <div class="page-header"
+          data-sal-duration="900"
+          data-sal="fade"
+          data-sal-delay="300"
+          data-sal-easing="ease-in"
+        >
           <h1>about me</h1>
           <div class="page-header-text">
             <p>who am i</p>
           </div>
       </div>
-      <div class="about__text-details">
+      <div class="about__text-details"
+        data-sal-duration="900"
+        data-sal="zoom-out"
+        data-sal-delay="300"
+        data-sal-easing="ease-in"
+      >
         <p>
           I'm a software engineer with a background in design. I have an insatiable appetite 
           for knowledge, logical mindset, enthusiasm for novel possibilities and a great work ethic.
@@ -58,7 +74,12 @@
           soccer, hiking, or crossing off another item on my bucket list.
         </p>
       </div>
-      <div class="about__text-links">
+      <div class="about__text-links"
+        data-sal-duration="900"
+        data-sal="fade"
+        data-sal-delay="300"
+        data-sal-easing="ease-out"
+      >
         <a class="btn" href="">download resume</a>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/ark1980/" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-3x"></i></a>
@@ -69,5 +90,11 @@
       </div>
     </div>  
   </div>
+
+  <!-- sal.js animation -->
+  <script src="../node_modules/sal.js/dist/sal.js"></script>
+  <script>
+    sal();
+  </script>
 </body>
 </html>

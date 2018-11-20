@@ -7,6 +7,7 @@
   <!-- font awsome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
   <title>SKILLS | ALI KESHANIAN</title>
 </head>
 <body>
@@ -32,7 +33,12 @@
   <!-- Skills -->
   <section class="skills" id="skills">
 
-    <div class="page-header">
+    <div class="page-header"
+      data-sal-duration="900"
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-easing="ease-in"
+    >
       <h1>Skills</h1>
       <div class="page-header-text">
         <span class="hr-line"></span>
@@ -42,7 +48,12 @@
     
     <div class="skills-columns">
       <!-- Languages -->
-      <div class="skills-column">
+      <div class="skills-column"
+        data-sal-duration="900"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease-in"
+      >
         <h1>languages</h1>
         <div class="skill">
           <img src="./images/brands/javaScript.svg" alt="JavaScript">
@@ -63,7 +74,12 @@
       </div>
 
       <!-- Frameworks -->
-      <div class="skills-column">
+      <div class="skills-column"
+        data-sal-duration="900"
+        data-sal="slide-up"
+        data-sal-delay="500"
+        data-sal-easing="ease-in"
+      >
         <h1>frameworks</h1>
         <div class="skill">
           <img src="./images/brands/react.svg" alt="ReactJS">
@@ -92,7 +108,12 @@
       </div>
 
       <!-- Tools -->
-      <div class="skills-column">
+      <div class="skills-column"
+        data-sal-duration="900"
+        data-sal="slide-up"
+        data-sal-delay="700"
+        data-sal-easing="ease-in"
+      >
         <h1>tools</h1>
         <div class="skill">
           <img src="./images/brands/terminal.svg" alt="terminal">
@@ -121,7 +142,12 @@
       </div>
 
       <!-- Design -->
-      <div class="skills-column">
+      <div class="skills-column"
+        data-sal-duration="900"
+        data-sal="slide-up"
+        data-sal-delay="900"
+        data-sal-easing="ease-in"
+      >
         <h1>design</h1>
         <div class="skill">
           <img src="./images/brands/responsive-design.svg" alt="Responsive web design">
@@ -146,5 +172,11 @@
     </div>
       
   </section>
+
+  <!-- sal.js animation -->
+  <script src="../node_modules/sal.js/dist/sal.js"></script>
+  <script>
+    sal();
+  </script>
 </body>
 </html>

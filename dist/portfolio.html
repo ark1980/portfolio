@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
   <title>PORTFOLIO | ALI KESHANIAN</title>
 </head>
 <body>
@@ -28,7 +29,12 @@
   </div>
 
   <!-- Portfolio -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio"
+    data-sal-duration="900"
+    data-sal="fade"
+    data-sal-delay="500"
+    data-sal-easing="ease-in"
+  >
     <div class="portfolio__wrapper">
       <div class="portfolio__wrapper-header">
         <div class="page-header">
@@ -122,5 +128,11 @@
       
     </div>
   </section>
+
+  <!-- sal.js animation -->
+  <script src="../node_modules/sal.js/dist/sal.js"></script>
+  <script>
+    sal();
+  </script>
 </body>
 </html>
