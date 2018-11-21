@@ -526,21 +526,6 @@ body {
         align-items: center; }
         .portfolio__wrapper-header {
           border-right: none; }
-        .portfolio__wrapper-header::after {
-          content: "";
-          margin: auto;
-          width: 60%;
-          position: absolute;
-          left: 50%;
-          display: inline-block;
-          transform: translateX(-50%);
-          margin-top: 1.5rem;
-          height: .13rem;
-          background: #1C1E22;
-          background: -moz-linear-gradient(left, #FFFFFF 0%, #1C1E22 50%, #FFFFFF 100%);
-          background: -webkit-linear-gradient(left, #FFFFFF 0%, #1C1E22 50%, #FFFFFF 100%);
-          background: linear-gradient(to right, #FFFFFF 0%, #1C1E22 50%, #FFFFFF 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-white', endColorstr='$color-white',GradientType=1 ); }
         .portfolio__wrapper-header {
           margin: auto; } }
     @media (max-width: 600px) {

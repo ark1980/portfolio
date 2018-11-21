@@ -97,23 +97,6 @@
         border-right: none;
       }
 
-      &-header::after {
-        content: "";
-        margin: auto;
-        width: 60%;
-        position: absolute;
-        left: 50%;
-        display: inline-block;
-        transform: translateX(-50%);
-        margin-top: 1.5rem;
-        height: .13rem;
-        background: $color-primary;
-        background: -moz-linear-gradient(left, $color-white 0%, $color-primary 50%, $color-white 100%);
-        background: -webkit-linear-gradient(left, $color-white 0%,$color-primary 50%,$color-white 100%);
-        background: linear-gradient(to right, $color-white 0%,$color-primary 50%,$color-white 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-white', endColorstr='$color-white',GradientType=1 );
-      }
-  
       &-header {
         margin: auto;
       }
