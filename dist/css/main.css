@@ -649,22 +649,22 @@ body {
       @media (max-width: 600px) {
         .contact-page .contact-form .form-textarea {
           font-size: 1.3rem; } }
-    .contact-page .contact-form .form-btn {
+    .contact-page .contact-form .form .btn {
       width: 100%;
       font-weight: 500;
       letter-spacing: .4rem;
       font-size: 1.9rem;
       cursor: pointer;
       border: none; }
-      .contact-page .contact-form .form-btn:focus {
+      .contact-page .contact-form .form .btn:focus {
         outline: none;
         -webkit-box-shadow: 3px 3px 5px 0px rgba(3, 3, 3, 0.75);
         -moz-box-shadow: 3px 3px 5px 0px rgba(3, 3, 3, 0.75);
         box-shadow: 3px 3px 5px 0px rgba(3, 3, 3, 0.75); }
       @media (max-width: 600px) {
-        .contact-page .contact-form .form-btn {
+        .contact-page .contact-form .form .btn {
           font-size: 1.4rem; } }
-    .contact-page .contact-form .form-btn:hover {
+    .contact-page .contact-form .form .btn:hover {
       border: none;
       -webkit-box-shadow: 1px 1px 5px 0px #030303;
       -moz-box-shadow: 1px 1px 5px 0px #030303;
